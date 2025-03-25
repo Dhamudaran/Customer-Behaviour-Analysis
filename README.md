@@ -1,4 +1,4 @@
-# Customer-Behaviour-Analysis
+sa# Customer-Behaviour-Analysis
 Customer  Behaviour Analysis using  Sql &amp; python   
 📊 Customer Behavior Analysis
 Data-driven insights into customer engagement, retention, and marketing effectiveness
@@ -68,6 +68,6 @@ df['Sentiment'] = df['ReviewText'].apply(lambda x: 'Positive' if analyzer.polari
 🔹 Real-time Sentiment Tracking using AI Models
 
 📩 Contact & Contributions
-🔗 GitHub: [[Your Repository Link]](https://github.com/Dhamudaran/Customer-Behaviour-Analysis)
+🔗 GitHub: (https://github.com/Dhamudaran/Customer-Behaviour-Analysis)
 📧 Email: darandd@gmail.com
 💡 Contributions Welcome! Feel free to fork & submit pull requests.
