@@ -12,7 +12,7 @@ This project focuses on analyzing customer behavior using SQL & Python. It cover
 ✔️ Best-performing products per region
 
 🛠️ Technologies Used
-Python (Pandas, NumPy, Matplotlib, Seaborn, NLTK for sentiment analysis)
+Python (Pandas, NLTK for sentiment analysis)
 
 SQL (MySQL queries for data extraction & analysis)
 
@@ -29,9 +29,6 @@ Track likes, views, and clicks across different content types.
 
 Query:
 
-sql
-Copy
-Edit
 SELECT ContentType, SUM(likes) AS TotalLikes, 
        SUM(CAST(SUBSTRING_INDEX(ViewsClicksCombined, '-', 1) AS UNSIGNED)) AS TotalViews, 
        SUM(CAST(SUBSTRING_INDEX(ViewsClicksCombined, '-', -1) AS UNSIGNED)) AS TotalClicks
@@ -42,9 +39,7 @@ Measure the percentage of repeat customers.
 
 Query:
 
-sql
-Copy
-Edit
+
 SELECT (COUNT(DISTINCT CASE WHEN customerType = 'Repeat' THEN CustomerID END) * 100.0 
         / COUNT(DISTINCT CustomerID)) AS RetentionRate
 FROM mm.guvi_customers;
@@ -54,8 +49,7 @@ Identify positive, negative, and neutral sentiments in customer feedback.
 Python NLP Approach (VADER):
 
 python
-Copy
-Edit
+
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 df['Sentiment'] = df['ReviewText'].apply(lambda x: 'Positive' if analyzer.polarity_scores(x)['compound'] > 0 else 'Negative')
