@@ -1,22 +1,23 @@
 # Customer-Behaviour-Analysis
 Customer  Behaviour Analysis using  Sql &amp; python   
-📌 Customer Behaviour Analysis
-Analyzing customer journey, engagement, and retention trends using SQL & Python
+📊 Customer Behavior Analysis
+Data-driven insights into customer engagement, retention, and marketing effectiveness
 
 📖 Overview
-This project focuses on analyzing customer behavior using SQL & Python. It covers:
-✔️ Customer journey tracking (drop-off points, conversion trends)
-✔️ Engagement analysis (likes, views, clicks)
-✔️ Sentiment analysis on customer reviews
-✔️ Retention rate calculation
-✔️ Best-performing products per region
+ShopEasy, an online retail business, is facing declining customer engagement and conversion rates despite high marketing expenditures. This project aims to analyze customer journey patterns, reviews, and marketing performance using SQL and Python to provide data-driven business insights.
+
+🚀 Business Objectives
+✔️ Identify customer drop-off points in the purchase journey.
+✔️ Analyze sentiment in customer reviews to understand satisfaction.
+✔️ Measure marketing effectiveness through retention and engagement rates.
+✔️ Optimize product recommendations based on buying patterns.
 
 🛠️ Technologies Used
-Python (Pandas, NLTK for sentiment analysis)
+Python: pandas, MySQL-connector, NLTK
 
-SQL (MySQL queries for data extraction & analysis)
+SQL: MySQL queries for data extraction & analysis
 
-Jupyter Notebook (for visualization & reporting)
+Jupyter Notebook/Spyder: Data visualization and reporting
 
 📊 Features & Analysis
 ✅ 1. Customer Drop-Off Analysis
@@ -53,6 +54,13 @@ python
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 df['Sentiment'] = df['ReviewText'].apply(lambda x: 'Positive' if analyzer.polarity_scores(x)['compound'] > 0 else 'Negative')
+
+
+📏 Evaluation Metrics
+✔️ Customer drop-off reduction rate
+✔️ Increase in repeat purchases
+✔️ Improvement in product engagement & marketing ROI
+
 
 📌 Future Enhancements
 🔹 AI-based Predictive Customer Retention Model
