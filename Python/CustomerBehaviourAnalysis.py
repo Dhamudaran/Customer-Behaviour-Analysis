@@ -9,7 +9,7 @@ import mysql.connector as db
 
 host_name = "localhost" 
 user_name = "dhamodaran"
-password  = "Always12!@"
+password  = ""
 db_name   = "mm"
 
 #Connection String for MySQL
